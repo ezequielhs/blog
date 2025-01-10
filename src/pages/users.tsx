@@ -39,8 +39,10 @@ export default function Users() {
             {user ?
                 <>
                     <h1 className="font-bold text-3xl">Usuarios</h1>
-                    {loading && <p className="text-base py-6">Cargando...</p>}
-                    <UsersList users={users} />
+                    {loading ?
+                        <p className="text-base py-6">Cargando...</p> :
+                        <UsersList users={users} />
+                    }
                 </> :
                 <h1 className="font-bold text-3xl">No tienes permisos para acceder a esta seccion.</h1>}
         </div>

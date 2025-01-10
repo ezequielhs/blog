@@ -33,9 +33,8 @@ export const Header = () => {
                     <button type="button" onClick={() => router.push("/users")} className="font-bold text-base px-3 hover:text-gray-500">Usuarios</button>
                 </div>
                 <div className="flex items-center justify-end gap-2">
-                    <button type="button" className="font-normal h-8 text-sm px-3 border border-orange-100 bg-orange-100 rounded-full hover:bg-orange-50 hover:border-orange-300">REGISTRARME</button>
                     {user ?
-                        <button type="button" onClick={handleLogout} className="font-normal h-8 text-sm px-3 rounded-full border border-gray-200 hover:bg-orange-50">CERRAR SESIÓN</button>
+                        <button type="button" onClick={handleLogout} className="font-normal h-8 text-sm px-3 border border-orange-100 bg-orange-100 rounded-full hover:bg-orange-50 hover:border-orange-300">CERRAR SESIÓN</button>
                         :
                         <button type="button" onClick={handleLogin} className="font-normal h-8 text-sm px-3 rounded-full border border-gray-200 hover:bg-orange-50">INICIAR SESIÓN</button>
                     }

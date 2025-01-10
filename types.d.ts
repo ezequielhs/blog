@@ -16,4 +16,16 @@ declare global {
 		views: number;
 		userId: number;
 	};
+
+	type Comment = {
+		id: number;
+		body: string;
+		postId: number;
+		likes: number;
+		user: {
+			id: number;
+			username: string;
+			fullName: string;
+		};
+	};
 }
